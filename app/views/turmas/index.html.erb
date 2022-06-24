@@ -6,9 +6,10 @@
   <% @turmas.each do |turma| %>
     <%= render turma %>
     <p>
-      <%= link_to "Mostre essa turma", turma %>
+      <%= link_to "Mostre essa turma", turma, class:"btn btn-primary" %>
     </p>
   <% end %>
 </div>
 
-<%= link_to "Nova turma", new_turma_path %>
+<%= link_to "Nova turma", new_turma_path, class:"btn btn-success" %>
+
